@@ -1,0 +1,225 @@
+.contactus_wrap{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.main_text_wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_text{
+    font-size: var(--large);
+    font-family: var(--aeonik_light);
+    background: linear-gradient(180deg, #F6F6F4 17.78%, #959595 82.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sub_text{
+    font-size: var(--medium);
+    font-family: var(--inter);
+    margin: 25px;
+    margin-bottom: 35px;
+}
+.arrow{
+    display: none;
+}
+
+.contact_box_wrap{
+    position: relative;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_box {
+    background: linear-gradient(
+      90deg,
+      rgba(34, 34, 34, 0.6) 0%,
+      rgba(0, 0, 0, 0.1) 97.68%
+    );
+    backdrop-filter: blur(15px);
+
+    border-radius: 15px;
+    height: 200px;
+    width: 400px;
+    border: 1px solid #868686;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 25px;
+    margin-top: 30px;
+    font-family: var(--inter );
+    color: #9EA2A3;
+    font-size: var(--small);
+
+  }
+
+.darwinsheet{
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.innermail_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10px;
+}
+
+.innerphone_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+
+.inner_icons{
+    height: 30px;
+}
+
+.innermail{
+    margin-left: 10px;
+}
+
+.innerphone{
+    margin-left: 10px;
+}
+
+.coffee_icon{
+    position: absolute;
+    height: 50px;
+    z-index: -1;
+    top: 200px;
+    right: 30px;
+}
+
+.phone_icon{
+    position: absolute;
+    height: 65px;
+    z-index: -1;
+    top: 8px;
+    left: 150px;
+    
+}
+
+.mail_icon{
+    position: absolute;
+    height: 60px;
+    z-index: -1;
+    top: 90px;
+    left: 20px;
+}
+.sms_icon{
+    position: absolute;
+    height: 70px;
+    z-index: -1;
+    top: 8px;
+    left: 350px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .contactus_wrap{
+        height: auto;
+        margin-top: 100px;
+    }
+    .arrow{
+        display: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .contactus_wrap{
+        height: 100vh;
+        margin: 0;
+    }
+    .arrow{
+        position: absolute;
+        bottom: 5px;
+        display: block;
+    }       
+    .main_text{
+        font-size: var(--large_mob);
+    }
+    
+    .sub_text{
+        font-size: var(--regular_tab);
+        font-family: var(--inter);
+        margin: 25px;
+        margin-bottom: 35px;
+    }
+    .contact_box_wrap{
+        height: 300px;
+        width: 350px;
+    }
+    
+    .contact_box {
+        background: linear-gradient(
+          90deg,
+          rgba(34, 34, 34, 0.6) 0%,
+          rgba(0, 0, 0, 0.1) 97.68%
+        );
+        backdrop-filter: blur(15px);
+    
+        border-radius: 15px;
+        height: 170px;
+        width: 290px;
+        align-items: left;
+        padding: 5px;
+        margin-top: 30px;
+        font-size: var(--small_mob);
+    
+      }
+      .inner_icons{
+        height: 25px;
+    }
+    
+    .coffee_icon{
+        position: absolute;
+        height: 30px;
+        z-index: -1;
+        top: 200px;
+        right: 0px;
+    }
+    
+    .phone_icon{
+        position: absolute;
+        height: 50px;
+        z-index: -1;
+        top: 48px;
+        left: 80px;
+        
+    }
+    
+    .mail_icon{
+        position: absolute;
+        height: 40px;
+        z-index: -1;
+        top: 120px;
+        left: -10px;
+    }
+    .sms_icon{
+        position: absolute;
+        height: 50px;
+        z-index: -1;
+        top: 50px;
+        left: 190px;
+    }
+    
+  }

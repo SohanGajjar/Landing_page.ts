@@ -1,0 +1,214 @@
+.aboutus_wrap{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutus_box{
+    position: relative;
+    height: 600px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.cylinder_database{
+    height: 150px;
+    position: absolute;
+    left: 90px;
+    top: 20px;
+    z-index: -2;
+}
+.arrow{
+    display: none;
+}
+.comma{
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    left: 670px;
+    z-index: 0;
+}
+
+.main_text_box{
+    height: 150px;
+    width: 510px;
+    padding: 40px;
+    font-size: var(--regular);
+    font-family: var(--inter);
+    border-radius: 15px;
+    border: 2px solid #585858;
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.6) 0%, rgba(0, 0, 0, 0.1) 97.68%);
+    backdrop-filter: blur(18px);
+    font-weight: 300;
+    z-index: -1;
+    color: #585858;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-weight: 400;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph_chart{
+    height: 180px;
+    position: absolute;
+    left: 640px;
+    bottom: 80px;
+}
+
+.sub_text_box{
+    height: 50px;
+    width: 550px;
+    padding: 40px;
+    font-size: var(--small);
+    font-family: var(--inter);
+    font-weight: 400;
+    border-radius: 10px;
+    border: 2px solid #585858;
+    background: linear-gradient(90deg, rgba(34, 34, 34, 0.6) 0%, rgba(0, 0, 0, 0.1) 97.68%);
+    backdrop-filter: blur(18px);
+    z-index: 0;
+    color: #585858;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+.charles_darwin{
+    padding-top: 10px;
+    align-self: flex-end;
+    font-family: var(--aeonik_regular);
+}
+
+@media only screen and (max-width: 1024px) {
+    .arrow{
+        display: none;
+    }
+
+    .aboutus_wrap{
+        height: auto;
+        margin-top: 100px;
+    }
+    
+    .aboutus_box{
+        height: 550px;
+        width: 700px;
+
+    }
+
+    .main_text_box{
+        height: 120px;
+        width: 460px;
+        padding: 40px;
+        font-size: var(--regular_tab);
+        top: 100px;
+        left: 80px;
+    }
+
+    .cylinder_database{
+        height: 130px;
+        left: 30px;
+        top: 20px;
+        z-index: -2;
+    }
+    
+    .comma{
+        height: 30px;
+        position: absolute;
+        top: 85px;
+        left: 500px;
+        z-index: 0;
+    }
+    .graph_chart{
+        height: 140px;
+        position: absolute;
+        left: 300px;
+        bottom: 95px;
+    }
+    
+    .sub_text_box{
+        height: 45px;
+        width: 380px;
+        font-size: var(--small);
+        bottom: 0px;
+        left: 120px;
+    }
+    
+    
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .arrow{
+        position: absolute;
+        bottom: 5px;
+        display: block;
+    }
+
+    .aboutus_wrap{
+        height: 100vh;
+        position: relative;
+        /* background-color: antiquewhite; */
+    }
+    
+    .aboutus_box{
+        height: 600px;
+        width: 350px;
+
+    }
+
+    .main_text_box{
+        height: 140px;
+        width: 300px;
+        padding: 20px;
+        font-size: var(--regular_mob);
+        top: 100px;
+        left: 0px;
+    }
+
+    .cylinder_database{
+        height: 100px;
+        left: 00px;
+        top: 20px;
+        z-index: -2;
+    }
+    
+    .comma{
+        height: 20px;
+        position: absolute;
+        top: 90px;
+        left: 270px;
+        z-index: 0;
+    }
+    .graph_chart{
+        height: 100px;
+        position: absolute;
+        left: 200px;
+        bottom: 175px;
+    }
+    
+    .sub_text_box{
+        height: 45px;
+        width: 300px;
+        font-size: var(--small_mob);
+        bottom: 100px;
+        left: 5px;
+        padding: 20px 20px ;
+    }
+    
+    
+  }
